@@ -1,4 +1,4 @@
-# Google Cloud project uptime monitoring
+# Google Cloud uptime monitoring
 
 Provides uptime monitoring for a GCP project.
 
