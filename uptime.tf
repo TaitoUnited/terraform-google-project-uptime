@@ -19,7 +19,7 @@ resource "google_monitoring_uptime_check_config" "https" {
 
   project      = var.project_id
   display_name = "${var.project}-${var.env}-${var.uptime_targets[count.index]}"
-  timeout      = var.uptime_timeouts[count.index]
+  timeout      = "${var.uptime_timeouts[count.index]}s"
 
   monitored_resource {
     type = "uptime_url"
