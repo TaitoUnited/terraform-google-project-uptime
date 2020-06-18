@@ -30,6 +30,7 @@ resource "google_monitoring_uptime_check_config" "https" {
 
   http_check {
     use_ssl = true
+    validate_ssl = true
     port    = 443
     path    = var.uptime_paths[count.index]
   }
